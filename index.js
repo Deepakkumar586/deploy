@@ -14,6 +14,10 @@ app.get("/about", (req, res) => {
   res.send("This is the about page");
 });
 
+app.get("/contact", (req, res) => {
+  res.send("Contact information: 123 Main St, City, State, ZIP");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
